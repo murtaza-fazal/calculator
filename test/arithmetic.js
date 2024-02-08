@@ -6,6 +6,7 @@ describe('Arithmetic', function() {
           .end(function(err, res) {
               expect(res.body).to.eql({ error: "Unspecified operation" });
               done();
+            
           });
     });
     it('rejects invalid operation', function(done) {
